@@ -34,7 +34,7 @@ watch(todos, (value) => {
 },{deep: true})
 
 onMounted(() => {
-  todos.value = JSON.parse(localStorage.getItem("todos"))
+  todos.value = JSON.parse(localStorage.getItem("todos")) || []
 })
 </script>
 
